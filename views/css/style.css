@@ -33,6 +33,9 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
+  /* These 2 lines shift the elements to new layer */
+  transform: translateZ(0); 
+  will-change :transform;
 }
 
 .randomPizzaContainer {
